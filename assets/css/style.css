@@ -1,47 +1,39 @@
-.navbar-fixed-top{
-	background-color: rgba(40,55,71,0.9);
-
-}
-.navbar-fixed-bottom {
-    bottom: 0;
-    margin-bottom: 0;
-    border-width: 1px 0 0;
-    height: 15%;
-    background-color: rgba(40,55,71,0.9);
-}
 .container-fluid {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
     padding-top: 1rem;
-    padding-bottom: 2rem;
-    max-height: 7rem;
+    padding-bottom: 1rem;
+    background-color: #283747  ; /* rgba(40,55,71,0.9);*/
+}
+.navbar-brand>img {
+    display: block;
+    width: 5rem;
+    margin-top: -1.5rem;
+}
+p {
+    margin: 0 0 10px;
+    color: white;
+    letter-spacing: 3px;
+    margin-top: -3.5rem;
+    margin-left: 6rem;
+    font-family: 'Roboto',sans-serif;
 }
 .navbar-default .navbar-nav>li>a {
     color: white;
     font-family: 'Quicksand',sans-serif;
     text-transform: uppercase;
     outline: none;
-    border-style: none;
 }
-.navbar-default .navbar-nav>li>a:hover{
-    color: #F2F3F4;
-    font-family: 'Quicksand',sans-serif;
-    letter-spacing: 2px;
-    cursor: pointer;
-    background-color: rgba(234,236,238,0.1);
-    display: block;
-    
-}
-.navbar-default .navbar-nav>li>a:focus{
+.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:hover{
     color: white;
     font-family: 'Quicksand',sans-serif;
     text-transform: uppercase;
-    outline: none;
-    border-style: none;
+    letter-spacing: 2px;
     font-size: 15px;
-    
+    background-color: rgba(234,236,238,0.1);
+    outline: none;
 }
 li:after {
     content: '';
@@ -56,10 +48,9 @@ li:hover:after {
     width: 100%;
     background: #3498DB;
 }
-.navbar-brand>img {
-    display: block;
-    width: 5rem;
-    margin-top: -1.5rem;
+.navbar-default {
+    background-color: #283747 ;
+    /* border-color: #e7e7e7; */
 }
 
 .navbar-fixed-bottom {
@@ -67,23 +58,11 @@ li:hover:after {
     margin-bottom: 0;
     border-width: 1px 0 0;
     height: 15%;
-}
-p {
-    margin: 0 0 10px;
-    margin-top: -3rem;
-    margin-left: 6rem;
-    color: white;
-    letter-spacing: 3px;
-    font-size: 20px;
-    font-family: 'Roboto',sans-serif;
-}
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: white;
+    background-color: #283747 ;
 }
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: transparent;
-    
 }
-.jumbotron {
-   position: bottom;
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
 }
