@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MMIL</title>
     <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -40,10 +42,87 @@
      </div>
     </div>
   </nav>
-<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-  
-</nav>
+   <div class="row-fluid">
+     <img src="assets/img/slide-dark.jpg"  class="image" />
+   </div>
+  <h2 class="display-2 animated fadeInDown" >Microsoft mobile innovation labs</h2>
+  <h4 class="display-4 animated fadeInDown">Invent  .  Inspire  .  Innovate</h4> 
+  <div class="dept text-center ">
+    <div class="jumbotron">
+     <div class="row slideanim">
+        <div class="col-md-4 logo">
+          
+            <i class="fa fa-android fa-5x " ></i>
+            <h5 id="a1">APP DEVELOPMENT</h5>
+          
+        </div>
+        <div class="col-md-4  logo">
+          
+            <i class="fa fa-cloud fa-5x"></i>
+            <h5 id="a2">IOT DEVICES</h5> 
+          
+        </div>
+        <div class="col-md-4  logo">
+           
+            <i class="fa fa-code fa-5x"></i>
+            <h5 id="a3">WEB DEVELOPMENT</h5>
+        </div>
+     </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="panel panel-default slideanim">
+      <div class="panel-heading">ABOUT US</div> 
+      <div class="panel-body">
+     Culture and Civilization are used synonymously but there is a difference between the two words. While Culture connotes the beliefs, arts, mores, values, traditions, customs, food habits, religious beliefs and various behavioral traits needed to survive in a given geographical environment. In other words, the the environmental, social, and political forces shape the responses of a group of individual and the sum total of all the responses is defined as culture. On the other hand, Civilization represents the level of materialistic, intellectual and scientific achievements which the people of a given culture have acquired. However, both are interrelated and one leads to other.Behaviour, communication styles, level of importance given to the people etc are in integral part of the culture. These habits, beliefs and behavioural traits are passed from one generation to the other as value system. These value systems remain unchanged for generations to come as they are deeply ingrained in ones cores. One of such Indian values is the treatment given to the guests in India.
+      </div>
+      <a href="about.html"><i class="fa fa-sort-desc" title="More"></i></a>
+    </div>
+  </div>
+  <footer class="footer">
+    <p class="content"><a href="index.html">
+    <span class="glyphicon glyphicon-chevron-up" title="To the top"></span>
+     </a> 
+     <div class="copy">&copy;  copyright 2017</div></p>
+  </footer>
+     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+  $(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, #navbar-fixed-bottom").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+
+  });
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+ });
+    </script>
   </body>
 </html>
