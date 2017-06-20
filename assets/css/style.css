@@ -58,6 +58,14 @@ li:hover:after {
     border: none;
     /* border-color: #e7e7e7; */
 }
+
+.navbar-fixed-bottom {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+    height: 8%;
+    background-color: #283747 ;
+}
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: transparent;
 }
