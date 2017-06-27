@@ -6,7 +6,7 @@ html {
 .topnav {
     font-size: 14px;
     background-color: rgba(40,55,71,1) ;
-    border: none; 
+    border: none;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
@@ -72,7 +72,7 @@ p.head{
 .inline-block{
     background-color: rgba(40,55,71,1);
     width: 100%;
-    padding-top: 4rem;
+    padding-top: 2rem;
     color: white;
     text-align: center;
     padding-bottom: 2rem;
@@ -107,7 +107,7 @@ header.carousel-control{
     text-transform:uppercase;
     font-family: 'Montserrat',sans-serif;
     background-color: transparent;
-    color: #148F77; 
+    color: #148F77;
     border-bottom: none;
 }
 .panel-default .panel-body{
@@ -282,14 +282,14 @@ header.carousel-control{
 @media (max-width: 1200px) and (min-width: 1000px){
    ul.timeline li .tl-circ{
      margin-left: 45.3rem;
-  }  
+  }
 }
 @media (max-width: 700px){
-  
+
   ul.timeline:before {
     left: 40px;
   }
-  
+
   .tldate { width: 140px; }
 
   ul.timeline li .timeline-panel {

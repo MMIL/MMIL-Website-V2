@@ -12,13 +12,13 @@ h4,
 h5,
 h6 {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-   
+
 }
 
 .topnav {
     font-size: 14px;
     background-color: rgba(40,55,71,1) ;
-    border: none; 
+    border: none;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
@@ -99,7 +99,7 @@ header.carousel .item,
 header.carousel .item.active,
 header.carousel .carousel-inner {
     height: 100%;
-    
+
 }
 header.carousel .item{
     width: 100%;
@@ -155,7 +155,7 @@ p.para{
 .panel-info{
     margin: 0;
     height: 35.5rem;
-    border: none; 
+    border: none;
 }
 .glyphicon-chevron-left:before {
     content: "\e079";
@@ -192,8 +192,8 @@ ul.list>li{
     }
     h3.display-3{
        margin-right: 0rem;
-       font-size: 13px; 
-       margin-top: -12rem; 
+       font-size: 13px;
+       margin-top: -12rem;
     }
     p.para{
       font-size: 9.5px;
@@ -229,8 +229,8 @@ ul.list>li{
     }
     h3.display-3{
        margin-right: 0rem;
-       font-size: 16px; 
-       margin-top: 2rem; 
+       font-size: 16px;
+       margin-top: 2rem;
     }
     p.para{
        font-size: 11.5px;
@@ -265,7 +265,7 @@ ul.list>li{
     h3.display-3{
        margin-right: 0rem;
        font-size: 20px;
-       margin-top: 3rem; 
+       margin-top: 3rem;
     }
     p.para{
        margin-top: -1rem;
@@ -297,14 +297,14 @@ ul.list>li{
     h3.display-3{
        font-size: 35px;
        margin-top: 4rem;
-       margin-right: 0rem; 
+       margin-right: 0rem;
     }
     p.para{
       margin-top: -1rem;
       font-size: 21px;
       margin-right: 6rem;
     }
-  
+
      h2{
        margin-top: 3rem;
        font-size: 4.5rem;
@@ -335,14 +335,14 @@ ul.list>li{
     h3.display-3{
        font-size: 35px;
        margin-top: 4rem;
-       margin-right: 0rem; 
+       margin-right: 0rem;
     }
     p.para{
       margin-top: -1rem;
       font-size: 21px;
       margin-right: 6rem;
     }
-  
+
      h2{
        margin-top: 3rem;
        font-size: 4.5rem;
@@ -366,8 +366,8 @@ ul.list>li{
        margin-right: 4rem;
     }
     h3.display-3{
-       font-size: 34px; 
-       margin-top: 9rem; 
+       font-size: 34px;
+       margin-top: 9rem;
     }
     .panel-primary{
        height: 75.7rem;
@@ -399,8 +399,8 @@ ul.list>li{
       margin-right: 3rem;
     }
     h3.display-3{
-       font-size: 26px; 
-       margin-top: 6rem; 
+       font-size: 26px;
+       margin-top: 6rem;
     }
     .inline-block{
        margin-top: 12rem;
