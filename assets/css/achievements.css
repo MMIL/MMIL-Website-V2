@@ -1,0 +1,408 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+   
+}
+
+.topnav {
+    font-size: 14px;
+    background-color: rgba(40,55,71,1) ;
+    border: none; 
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-family: 'Quicksand',sans-serif;
+    text-transform: uppercase;
+    outline: none;
+}
+p.head{
+    margin: 0 0 10px;
+    color: white;
+    letter-spacing: 3px;
+    margin-top: -3.5rem;
+    margin-left: 6rem;
+    font-family: 'Roboto',sans-serif;
+}
+.navbar-brand>img {
+    display: block;
+    width: 5rem;
+    margin-top: -1.5rem;
+}
+.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:hover{
+    color: white;
+    font-family: 'Quicksand',sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    background-color: rgba(234,236,238,0.1);
+    outline: none;
+}
+.nav>li:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+.nav>li:hover:after {
+    width: 100%;
+    background: #3498DB;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 13px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.inline-block{
+    background-color: rgba(40,55,71,1);
+    width: 100%;
+    padding-top: 4rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+header.carousel {
+    margin-top: 7rem;
+    height: 56%;
+    text-align: center;
+}
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+    
+}
+header.carousel .item{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+img.image{
+    width: 100%;
+    height: 32.2rem;
+    margin-top: 4rem;
+}
+
+.carousel-caption{
+    color: black;
+    margin-bottom: -30rem;
+}
+h3.display-3{
+    color: #00897B;
+    margin-bottom: 2rem;
+    font-size: 25px;
+    margin-right: 6rem;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+}
+p.para{
+    color: #263238;
+    margin-top: 0rem;
+    margin-right: 6rem;
+    font-size: 17px;
+    font-family: 'Roboto',sans-serif;
+}
+.panel-default{
+    margin-top: 4rem;
+    border: none;
+    background-color: transparent;
+}
+.panel-default .panel-heading{
+    border: none;
+    background-color: transparent;
+    color: #CA6F1E;
+}
+.panel-default .panel-body{
+     color: grey;
+}
+.panel-primary{
+    margin: 0;
+    height: 35.5rem;
+    border: none;
+}
+.panel-info{
+    margin: 0;
+    height: 35.5rem;
+    border: none; 
+}
+.glyphicon-chevron-left:before {
+    content: "\e079";
+    background-color: black;
+    padding: 1rem;
+    margin-left: -17rem;
+    font-size: 2rem;
+}
+.glyphicon-chevron-right:before {
+    content: "\e080";
+    background-color: black;
+    padding: 1rem;
+    margin-right: -17.2rem;
+    font-size: 2rem;
+}
+ul.list>li{
+    line-height: 3rem;
+    font-size: 2rem;
+}
+@media(max-width: 700px){
+    img.image{
+       padding-bottom: 12.8rem;
+       margin: 0rem;
+    }
+    .glyphicon-chevron-left:before {
+    font-size: 12px;
+    padding: 1rem;
+    margin-left: 0rem;
+    }
+   .glyphicon-chevron-right:before {
+    font-size: 12px;
+    padding: 1rem;
+    margin-right: 0rem;
+    }
+    h3.display-3{
+       margin-right: 0rem;
+       font-size: 13px; 
+       margin-top: -12rem; 
+    }
+    p.para{
+      font-size: 9.5px;
+      margin-top: -1rem;
+      margin-right: 0rem;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+    header.carousel{
+    height: 45rem;
+    }
+    h2{
+      font-size: 2.3rem;
+    }
+    ul.list>li{
+      font-size: 1.5rem;
+    }
+}
+@media(max-width: 999px) and (min-width: 720px){
+    img.image{
+        padding-bottom: 8.2rem;
+        margin-top: 7rem;
+    }
+    .glyphicon-chevron-left:before {
+    font-size: 14px;
+    padding: 1rem;
+    margin-left: -9rem ;
+    }
+   .glyphicon-chevron-right:before {
+    font-size: 14px;
+    padding: 1rem;
+    margin-right: -9rem ;
+    }
+    h3.display-3{
+       margin-right: 0rem;
+       font-size: 16px; 
+       margin-top: 2rem; 
+    }
+    p.para{
+       font-size: 11.5px;
+       margin-top: -1rem;
+       margin-right: 3rem;
+    }
+    .panel-info{
+     padding-top: 6rem;
+    }
+    h2{
+       font-size: 2.3rem;
+    }
+    ul.list>li{
+      font-size: 1.5rem;
+    }
+}
+@media(max-width: 1024px) and (min-width: 1000px){
+   img.image{
+      height: 28.3rem;
+      margin-top: 2.3rem;
+    }
+    .glyphicon-chevron-left:before {
+    font-size: 22px;
+    padding: 1rem;
+    margin-left: -12rem ;
+    }
+   .glyphicon-chevron-right:before {
+    font-size: 22px;
+    padding: 1rem;
+    margin-right: -12rem ;
+    }
+    h3.display-3{
+       margin-right: 0rem;
+       font-size: 20px;
+       margin-top: 3rem; 
+    }
+    p.para{
+       margin-top: -1rem;
+      font-size: 15px;
+      margin-right: 4.7rem;
+    }
+    h2{
+       font-size: 3rem;
+    }
+    ul.list>li{
+      font-size: 2rem;
+    }
+}
+@media(max-width: 1440px) and (min-width: 1380px){
+   img.image{
+      height: 39.5rem;
+      margin-top: 4rem;
+    }
+    .glyphicon-chevron-left:before {
+    font-size: 42px;
+    padding: 1rem;
+    margin-left: -16rem ;
+    }
+   .glyphicon-chevron-right:before {
+    font-size: 42px;
+    padding: 1rem;
+    margin-right: -16rem ;
+    }
+    h3.display-3{
+       font-size: 35px;
+       margin-top: 4rem;
+       margin-right: 0rem; 
+    }
+    p.para{
+      margin-top: -1rem;
+      font-size: 21px;
+      margin-right: 6rem;
+    }
+  
+     h2{
+       margin-top: 3rem;
+       font-size: 4.5rem;
+    }
+    ul.list>li {
+    line-height: 5.5rem;
+    font-size: 3.5rem;
+    }
+     .inline-block{
+       margin-top: 0rem;
+    }
+}
+@media(max-width: 1498px) and (min-width: 1445px){
+   img.image{
+      height: 39.5rem;
+      margin-top: 4rem;
+    }
+    .glyphicon-chevron-left:before {
+    font-size: 42px;
+    padding: 1rem;
+    margin-left: -16rem ;
+    }
+   .glyphicon-chevron-right:before {
+    font-size: 42px;
+    padding: 1rem;
+    margin-right: -16rem ;
+    }
+    h3.display-3{
+       font-size: 35px;
+       margin-top: 4rem;
+       margin-right: 0rem; 
+    }
+    p.para{
+      margin-top: -1rem;
+      font-size: 21px;
+      margin-right: 6rem;
+    }
+  
+     h2{
+       margin-top: 3rem;
+       font-size: 4.5rem;
+    }
+    ul.list>li {
+    line-height: 5.5rem;
+    font-size: 3.5rem;
+    }
+     .inline-block{
+       margin-top: 0rem;
+    }
+}
+@media(max-height: 1366px) and (min-height: 1200px){
+   img.image{
+      height: 56.9rem;
+      margin-top: 11rem;
+    }
+    p.para{
+       margin-top: 3rem;
+       font-size: 25px;
+       margin-right: 4rem;
+    }
+    h3.display-3{
+       font-size: 34px; 
+       margin-top: 9rem; 
+    }
+    .panel-primary{
+       height: 75.7rem;
+    }
+    .panel-info{
+     height: 75.8rem;
+     font-size: 18.5px;
+    }
+     h2{
+       margin-top: 3rem;
+       font-size: 4.5rem;
+    }
+    ul.list>li {
+    line-height: 5.5rem;
+    font-size: 3.5rem;
+    }
+    .inline-block{
+       margin-top: 27rem;
+    }
+}
+@media(max-height: 1024px) and (min-height: 900px){
+   img.image{
+       height: 48.7rem;
+       margin-top: 10rem;
+    }
+    p.para{
+       margin-top: 2rem;
+      font-size: 17px;
+      margin-right: 3rem;
+    }
+    h3.display-3{
+       font-size: 26px; 
+       margin-top: 6rem; 
+    }
+    .inline-block{
+       margin-top: 12rem;
+    }
+}
