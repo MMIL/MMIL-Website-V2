@@ -24,13 +24,11 @@
 }
 .section-title:hover .botm-line
 {
-	width: 70px;
-	/* For Safari 3.1 to 6.0 */
+		width: 70px;
     -webkit-transition-property: width;
     -webkit-transition-duration: 2s;
     -webkit-transition-timing-function: linear;
     -webkit-transition-delay: 1s;
-    /* Standard syntax */
     transition-property: width;
     transition-duration: 2s;
     transition-timing-function: linear;
