@@ -62,6 +62,26 @@ p.head{
     width: 100%;
     background: #3498DB;
 }
+.tool + .tooltip > .tooltip-inner {
+    background-color: black;
+    margin-left: 128rem;
+}
+.tool + .tooltip > .tooltip-arrow { 
+    border-top-color:black;
+    margin-left: 125rem; 
+}
+.navbar-default .navbar-nav>.active>a {
+    color: white;
+    background-color: transparent;
+    border-bottom: 2px solid #CCD1D1;
+    transition: 1s ease;
+}
+.navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    border: none;
+    background-color: transparent;
+    color: white;
+    transition: 1s ease;
+}
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: transparent;
 }
@@ -83,10 +103,10 @@ p.head{
 .inline-block{
     background-color: rgba(40,55,71,1);
     width: 100%;
-    padding-top: 6rem;
+    padding-top: 8rem;
     color: white;
     text-align: center;
-
+    padding-bottom: 2rem;
 }
 p.copy{
     margin: 0 0 10px;

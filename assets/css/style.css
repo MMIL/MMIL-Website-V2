@@ -64,6 +64,18 @@ li:hover:after {
     width: 100%;
     background: #3498DB;
 }
+.navbar-default .navbar-nav>.active>a {
+    color: white;
+    background-color: transparent;
+    border-bottom: 2px solid #CCD1D1;
+    transition: 1s ease;
+}
+.navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    border: none;
+    background-color: transparent;
+    color: white;
+    transition: 1s ease;
+}
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: transparent;
 }
@@ -229,6 +241,14 @@ h5{
     color: white;
     text-align: center;
     padding-bottom: 2rem;
+}
+.tool + .tooltip > .tooltip-inner {
+    background-color: black;
+    margin-left: 128rem;
+}
+.tool + .tooltip > .tooltip-arrow { 
+    border-top-color:black;
+    margin-left: 125rem; 
 }
 @media(max-width:767px) {
     .intro-message {
