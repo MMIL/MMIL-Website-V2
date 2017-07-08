@@ -1,0 +1,209 @@
+
+.topnav {
+    font-size: 14px;
+    background-color: rgba(40,55,71,1) ;
+    border: none; 
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-family: 'Quicksand',sans-serif;
+    text-transform: uppercase;
+    outline: none;
+}
+p {
+    margin: 0 0 10px;
+    color: white;
+    letter-spacing: 3px;
+    margin-top: -3.5rem;
+    margin-left: 6rem;
+    font-family: 'Roboto',sans-serif;
+}
+.navbar-brand>img {
+    display: block;
+    width: 5rem;
+    margin-top: -1.5rem;
+}
+.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:hover{
+    color: white;
+    font-family: 'Quicksand',sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    background-color: rgba(234,236,238,0.1);
+    outline: none;
+}
+li:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+li:hover:after {
+    width: 100%;
+    background: #3498DB;
+}
+.navbar-default .navbar-nav>.active>a {
+    color: white;
+    background-color: transparent;
+    border-bottom: 2px solid #CCD1D1;
+    transition: 1s ease;
+}
+.navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    border: none;
+    background-color: transparent;
+    color: white;
+    transition: 1s ease;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 13px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+#container {   width: 100%;
+    max-width:100%;
+    margin: 6em auto;
+}
+.cols {
+    -moz-column-count:4;
+    -moz-column-gap: 5px;
+    -moz-column-width:10%;
+    -webkit-column-count:4;
+    -webkit-column-gap: 5px;
+    -webkit-column-width:10%;
+    column-count:4;
+    column-gap:5px ;
+    column-width:10%;
+}
+.box {
+ 
+  display:flex;
+    margin-bottom:1px;
+    overflow:hidden;
+    
+}
+.box.one {
+    height:600px;
+    background-color: #d77575;
+    width:500px;
+    break-inside: avoid;
+
+}
+.box.two {
+    height:300px;
+    background-color: #dcbc4c;
+width:500px;
+break-inside: avoid;
+}
+.box.three {
+    background-color: #a3ca3b;
+    height:300px;
+    width:500px;
+    break-inside:avoid;
+
+}
+.box.four {
+    background-color: #3daee3;
+    height:199px;
+    width:400px;
+    break-inside: avoid;
+}
+.box.five {
+    background-color: #bb8ed8;
+    height:200px;
+    width: 400px;
+    break-inside: avoid;
+}
+.box.six {
+    background-color: #baafb1;
+    height:200px;
+    width: 400px;
+    break-inside: avoid;
+}
+.box.seven {
+    background-color: #baafb1;
+    height:149px;
+    width:300px;
+    break-inside: avoid;
+}
+.box.eight {
+    background-color: #baafb1;
+    height:149px;
+    width:300px;
+    break-inside: avoid;
+}
+.box.nine {
+    background-color: #baafb1;
+    height:149px;
+    width:300px;
+    break-inside: avoid;
+}
+.box.ten {
+    background-color: #baafb1;
+    height:149px;
+    width:300px;
+    break-inside: avoid-page;}
+
+    .inline-block{
+    background-color: rgba(40,55,71,1);
+    width: 100%;
+    padding-top: 8rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.tool + .tooltip > .tooltip-inner {
+    background-color: black;
+    margin-left: 128rem;
+}
+.tool + .tooltip > .tooltip-arrow { 
+    border-top-color:black;
+    margin-left: 125rem; 
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  } 
