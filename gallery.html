@@ -32,7 +32,7 @@
           <li><a href="events.html" id="link">Events</a></li>
           <li><a href="team.html" id="link">Team</a></li>
           <li><a href="contact.html" id="link">Contact</a></li>
-          <li><a href="gallery.html" id="link">Gallery</a></li>
+          <li class="active"><a href="gallery.html" id="link">Gallery</a></li>
         </ul>
       </div>
     </div>
@@ -73,81 +73,10 @@
     	</div>
 		</div>
 	</div>
-  <footer class="footer">
-    <div class="inline-block">
-      <p class="copy">&copy; copyright@2017
-      <a href="index.html" data-toggle="tooltip" data-placement="top" class="tool" title="to the top"><i class="fa fa-chevron-up fa-1x fa-bw" style="float: right;color: white;  margin-right:20px;"></i></a></p>
-<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container-fluid topnav">
-
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="index.html" class="navbar-brand" title="Homepage"><img src="assets/img/logo3.png"><p>MMIL</p></a>
-            </div>
-
-            <div class="collapse navbar-collapse navbar-right" id="mainNavbar">
-                <ul class="nav navbar-nav" >
-                  <li><a href="about.html" id="link">About</a></li>
-                  <li><a href="project.html" id="link">Projects</a></li>
-                  <li><a href="achievement.html" id="link">Achievements</a></li>
-                  <li><a href="events.html" id="link">Events</a></li>
-                  <li><a href="team.html" id="link">Team</a></li>
-                  <li><a href="contact.html" id="link">Contact</a></li>
-                  <li><a href="gallery.html" id="link">Gallery</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-<div id="container" class="cols">
-<div class="animated fadeInDown">
-    <div class="box one">
-      <img src="assets/img/nature-hd-wallpapers-8.jpg" alt="" class="img-responsive"></div>
-    <div class="box two"><img src="assets/img/image6.jpg" style="max-width: 100%" height="auto"></div>
-    <div class="box three"><img src="assets/img/summer-art.jpg" style="max-width: 100%" height="auto"></div>
-    <div class="box four">
-    <img src="assets/img/bubbles.jpg" style="max-width: 100%" height="auto"></div>
-    <div class="box five"><img src="assets/img/image5.jpg" style="max-width: 100%" height="auto"></div>
-    <div class="box six">
-    <img src="assets/img/image4.jpg" style="max-width: 100%" height="auto"></div>
-    <div class="box seven"><img src="assets/img/image3.jpg" style="max-width: 100%" height="auto"></div>
-    <div class="box eight"><img src="assets/img/creative-compressor-1.jpg" style="max-width: 100%" height="auto"></div>
-    <div class="box nine"><img src="assets/img/image2.jpeg" style="max-width: 100%" height="auto"></div>
-    <div class="box ten"><img src="assets/img/image1.jpg" style="max-width: 100%" height="auto"></div>
-  </div>
-  </footer>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script type="text/javascript">
-	$(document).ready(function(){
-  	$(".navbar a, #navbar-fixed-bottom").on('click', function(event) {
-    	if (this.hash !== "") {
-      	event.preventDefault();
-      	var hash = this.hash;
-      	$('html, body').animate({
-        	scrollTop: $(hash).offset().top
-      	},5000, function(){
-        window.location.hash = hash;
-    		});
-    	}
-  	});
-		$(window).scroll(function() {
-    	$(".slideanim").each(function(){
-      	var pos = $(this).offset().top;
-      	var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    	});
-  	});
-  	$('[data-toggle="tooltip"]').tooltip();
-		});
-	</script>
-</body>
+	<footer class="footer">
+      <div class="inline-block">
+        <p class="copy text-center">&copy; copyright@2017
+        <a href="team.html" data-toggle="tooltip" data-placement="left" title="to the top"><i class="fa fa-chevron-up fa-1x fa-bw" style="float: right;color: white;  margin-right:20px;"></i></a></p>
+      </div>
+    </footer>
 </html>
