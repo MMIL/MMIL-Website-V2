@@ -1,7 +1,7 @@
 .up-padding{
-	
+
 	margin-top: 100px;
-	
+
 	font-size: 20px;
 	background-color: #95BF90  ;
 }
@@ -12,7 +12,7 @@
     }
 
 .color-text{
-	
+
 	padding-right: 70px;
 }
 
@@ -21,7 +21,7 @@
 	margin-left: 300px;
 }
 
-.image-position1{  
+.image-position1{
 	margin-top: 45px;
 }
 
@@ -34,41 +34,41 @@
 	.box-model6{
 	background-color: #F9D8C3;
 	height: 300px;
-	
-	
+
+
 	}
-	
+
 	.no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;
 }
-	
+
 
 
 .box-model1
 {
 	background-color: #F9D8C3;
-  
+
 	height: 300px;
-   
-	
+
+
 }
 .box-model2
 {
 	background-color:#D9FCFF;
-   
+
 	height: 200px;
     }
-	
-	
-	
+
+
+
 .box-model3
 {
 	background-color: #D9FCFF;
-  
+
 	height: 200px;
-    
-	
+
+
 }
 
 .padding-text{
@@ -77,25 +77,25 @@
 	font-size: 50px;
 	color: black;
 	font-family: bold;
-	
-	
+
+
 }
 
 .box-model4
 {
 	background-color: #F9D8C3;
- 
- 
+
+
 	height: 200px;
-   
-	
+
+
 }
 
 
 .box-model5
 {
 	background-color:#F9D8C3;
- 
+
 	height: 200px;
     }
 
@@ -117,7 +117,7 @@
 padding-top: 80px;
 text-align: center;
 }
-	
+
 	.padding-text4{
 	font-size: 60px;
 padding-top: 60px;
@@ -125,26 +125,20 @@ text-align: center;}
 .sub-text{
 	color: grey;
 	font-size: 20px;
-	
 }
-
 .sub-text1{
 	color: grey;
 	font-size: 15px;
-	
+
 }
 .fa {
-    
+
     font-size: 20px;
     width: 30px;
     text-align: center;
 
 	height: 20px;
 }
-
-
-
-
 .fa-facebook {
     background: #3B5998;
     color: white;

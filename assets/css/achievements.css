@@ -114,9 +114,9 @@ p.copy{
     background-color: black;
     margin-left: 128rem;
 }
-.tool + .tooltip > .tooltip-arrow { 
+.tool + .tooltip > .tooltip-arrow {
     border-top-color:black;
-    margin-left: 125rem; 
+    margin-left: 125rem;
 }
 header.carousel {
     margin: 9rem 1rem 6rem 1rem;
