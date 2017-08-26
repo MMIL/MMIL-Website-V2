@@ -77,10 +77,9 @@ li:hover:after {
 
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
-    border: none;
     background-color: transparent;
     color: white;
-    border-bottom: none !important;
+    border-bottom: none;
 }
 
 .navbar-default .navbar-toggle:focus,
