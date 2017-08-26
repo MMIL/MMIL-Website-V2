@@ -13,13 +13,13 @@ h4,
 h5,
 h6 {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-   
+
 }
 
 .topnav {
     font-size: 14px;
     background-color: rgba(40,55,71,1) ;
-    border: none; 
+    border: none;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
@@ -232,7 +232,7 @@ h5{
     color: #EC7063;
     text-decoration: none;
     outline: none;
-    font-size: 3rem; 
+    font-size: 3rem;
 }
 .inline-block{
     background-color: rgba(40,55,71,1);
@@ -246,9 +246,9 @@ h5{
     background-color: black;
     margin-left: 128rem;
 }
-.tool + .tooltip > .tooltip-arrow { 
+.tool + .tooltip > .tooltip-arrow {
     border-top-color:black;
-    margin-left: 125rem; 
+    margin-left: 125rem;
 }
 @media(max-width:767px) {
     .intro-message {
@@ -287,7 +287,7 @@ h5{
     0% {
       opacity: 0;
       transform: translateY(70%);
-    } 
+    }
     100% {
       opacity: 1;
       transform: translateY(0%);
@@ -297,9 +297,23 @@ h5{
     0% {
       opacity: 0;
       -webkit-transform: translateY(70%);
-    } 
+    }
     100% {
       opacity: 1;
       -webkit-transform: translateY(0%);
     }
-  } 
+  }
+/*team*/
+#our-team {
+	padding-top:70px;
+	padding-bottom:70px;
+}
+#our-team .text-center {
+	padding-top:20px;
+	margin-bottom:30px;
+	padding-bottom:10px;
+}
+#our-team .team img {
+	border-radius:8px;
+  margin-left: 25px;
+}
