@@ -136,6 +136,7 @@ li:hover:after {
     letter-spacing: 0.4rem;
     word-spacing: 0.4rem;
     font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
 }
 
 .intro-divider {
@@ -155,7 +156,7 @@ li:hover:after {
     font-family: 'Josefin Sans', sans-serif;
     letter-spacing: 0.3rem;
     font-size: 3.5rem;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .col-md-4 {
