@@ -384,3 +384,16 @@ h5 {
 .event-blocks {
     margin: 15.5rem 0;
 }
+
+.head-title {
+    color: #148F77;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.botm-line {
+    background-color: #2b2b2b;
+    width: 34px;
+    height: 2px;
+    display: inline-block;
+}
