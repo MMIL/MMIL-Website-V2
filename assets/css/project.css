@@ -1,44 +1,33 @@
-.section-padding
-{
-	padding: 100px 0px;
+.section-padding {
+    padding: 100px 0px;
 }
-.section-title{
-  margin-top: 300px;
+
+.section-title {
+    margin-top: 300px;
 }
-.sec-para{
-  color: 148F77;
-  margin: 10px 10px 10px 10px;
+
+.sec-para {
+    color: 148F77;
+    margin: 10px 10px 10px 10px;
 }
-.head-title
-{
-	color: #148F77;
-	font-size: 32px;
-	font-weight: 700;
+
+.head-title {
+    color: #148F77;
+    font-size: 32px;
+    font-weight: 700;
 }
-.botm-line
-{
-	background-color: #2b2b2b;
-	width: 34px;
-	height: 2px;
-	display: inline-block;
+
+.botm-line {
+    background-color: #2b2b2b;
+    width: 34px;
+    height: 2px;
+    display: inline-block;
 }
-.section-title:hover .botm-line
-{
-		width: 70px;
-    -webkit-transition-property: width;
-    -webkit-transition-duration: 2s;
-    -webkit-transition-timing-function: linear;
-    -webkit-transition-delay: 1s;
-    transition-property: width;
-    transition-duration: 2s;
-    transition-timing-function: linear;
-    transition-delay: 1s;
+
+.portfolio-box {
+    margin-bottom: 15px;
 }
-.portfolio-box
-{
-	margin-bottom: 15px;
-}
-.padding-right-zero
-{
-	padding-right: 0px;
+
+.padding-right-zero {
+    padding-right: 0px;
 }
