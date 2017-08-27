@@ -14,8 +14,7 @@
 
 .head-title {
     color: #148F77;
-    font-size: 32px;
-    font-weight: 700;
+    font-size: 3.2rem;
 }
 
 .botm-line {
@@ -23,6 +22,8 @@
     width: 34px;
     height: 2px;
     display: inline-block;
+    position: relative;
+    left: 10rem;
 }
 
 .portfolio-box {

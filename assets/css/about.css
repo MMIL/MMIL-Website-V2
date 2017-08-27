@@ -16,8 +16,7 @@ h6 {
 
 .head-title {
     color: #148F77;
-    font-size: 5rem;
-    font-weight: 700;
+    font-size: 3.2rem;
 }
 
 .botm-line {
@@ -25,8 +24,6 @@ h6 {
     width: 34px;
     height: 2px;
     display: inline-block;
-    position: relative;
-    right: 11rem;
 }
 
 .topnav {

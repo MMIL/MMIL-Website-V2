@@ -1,16 +1,13 @@
 .head-title {
     color: #148F77;
-    font-size: 5rem;
-    font-weight: 700;
+    font-size: 3.2rem;
 }
 
-.botm-line {
+.bot-line {
     background-color: #2b2b2b;
     width: 34px;
     height: 2px;
     display: inline-block;
-    position: relative;
-    right: 11rem;
 }
 
 .up-padding {
