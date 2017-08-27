@@ -37,16 +37,17 @@ h6 {
     padding-bottom: 0.5rem;
     min-height: 7.5rem;
     max-height: 7.5rem;
-    box-shadow: 10px 0 20px #000;
+    box-shadow: 0 0 20px #000;
 }
 
 .navbar-default .navbar-nav>li>a {
     color: white;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.8rem;
     letter-spacing: 0.1rem;
     outline: none;
     margin-top: 1rem;
+    font-weight: 300;
 }
 
 .navbar-header p {
@@ -54,8 +55,9 @@ h6 {
     letter-spacing: 3px;
     margin-top: -4rem;
     margin-left: 7.5rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 3rem;
+    font-weight: bold;
 }
 
 .navbar-brand>img {
@@ -67,11 +69,12 @@ h6 {
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
     color: white;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.1rem;
     font-size: 1.8rem;
     background-color: rgba(234, 236, 238, 0.1);
     outline: none;
+    font-weight: 300;
 }
 
 .nav>li:after {
@@ -149,7 +152,7 @@ p.copy {
     letter-spacing: 3px;
     margin-top: -3.5rem;
     margin-left: 6rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header.carousel {
@@ -191,6 +194,9 @@ header.carousel-control {
 .panel-default .panel-body {
     color: grey;
     filter: opacity(0.8);
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    ;
 }
 
 .page-header {

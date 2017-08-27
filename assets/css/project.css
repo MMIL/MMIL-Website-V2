@@ -3,12 +3,13 @@
 }
 
 .section-title {
-    margin-top: 300px;
+    margin-top: 200px;
 }
 
 .sec-para {
-    color: 148F77;
-    margin: 10px 10px 10px 10px;
+    color: grey;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
 }
 
 .head-title {
@@ -30,4 +31,13 @@
 
 .padding-right-zero {
     padding-right: 0px;
+}
+
+.copy {
+    margin: 0 0 10px;
+    color: white;
+    letter-spacing: 3px;
+    margin-top: -3.5rem;
+    margin-left: 6rem;
+    font-family: 'Montserrat', sans-serif;
 }
