@@ -125,28 +125,29 @@ li:hover:after {
 .intro-message>h1 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-    font-size: 3em;
+    font-size: 3.51em;
     text-transform: uppercase;
-    letter-spacing: 1rem;
+    letter-spacing: 0.5rem;
     font-family: 'Montserrat', sans-serif;
 }
 
 .intro-divider {
     width: 200px;
-    background-color: #f8f8f8;
-    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 2px;
     border-radius: 10px;
-    border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     margin-bottom: 3rem;
     margin-top: 3rem;
 }
 
 .intro-message>h3 {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-    text-transform: uppercase;
     letter-spacing: 0.5rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: sans-serif;
+    letter-spacing: 0.3rem;
+    font-size: 3.5rem;
 }
 
 .col-md-4 {
@@ -363,7 +364,7 @@ h5 {
 
 /*events*/
 
-.event{
+.event {
     margin-bottom: 5rem;
     background-color: rgba(40, 55, 71, 0.8);
     color: #fff;
