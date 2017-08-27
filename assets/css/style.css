@@ -363,7 +363,7 @@ h5 {
 
 /*events*/
 
-.events h1 {
+.event{
     margin-bottom: 5rem;
     background-color: rgba(40, 55, 71, 0.8);
     color: #fff;
@@ -387,7 +387,7 @@ h5 {
 
 .head-title {
     color: #148F77;
-    font-size: 32px;
+    font-size: 5rem;
     font-weight: 700;
 }
 
