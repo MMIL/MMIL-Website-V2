@@ -47,123 +47,96 @@
     </nav>
 
     <div class="container">
-        <div class="row" id="roundbtn">
-            <div class="row animated fadeInDown">
-                <div class="col-lg-4">
-                    <p class="button">
-                        <div class="round-button">
-                            <div class="round-button-circle"><i class="round-button"><span class="glyphicon glyphicon-home mysize"></span></i></div>
-                            <div class="container">C-20/1,JSSATEN,</div>
-                            <div class="container">Sector-62,Noida</div>
-                    </p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <p class="button">
-                        <div class="round-button">
-                            <div class="round-button-circle"><i class="round-button"><span class="glyphicon glyphicon-earphone mysize"></span></i></div>
-                            <div class="container-fluid">55999000</div>
-                    </p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <p class="button">
-                        <div class="round-button">
-                            <div class="round-button-circle"><i class="round-button"><span class="glyphicon glyphicon-envelope mysize"></span></i></div>
-                            <div class="container-fluid"><a href="http://jssaten.ac.in">www.jssaten.ac.in</a></div>
-                    </p>
-                    </div>
+        <div class="row animated fadeInDown">
+            <div class="col-xs-4">
+                <img src="assets/img/Icons/place.png">
+                <p>C-20/1, Sector-62, Noida</p>
+            </div>
+            <div class="col-xs-4">
+                <img src="assets/img/Icons/contact.png">
+                <p>+91 8569741524</p>
+            </div>
+            <div class="col-xs-4">
+                <img src="assets/img/Icons/mail.png">
+                <p>microsoft@jssaten.in</p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-6 animated fadeInDown">
+                <h2 style="text-align: center">Say 'Hi!' to us</h2>
+                <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.5129585806717!2d77.35659471438466!3d28.61438448242501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce541dc34567f%3A0x4fd027cb23d66b19!2sJSS+Academy+Of+Technical+Education!5e0!3m2!1sen!2sin!4v1498290804656" width="600" height="450" frameborder="0" style="border:0"></iframe>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2 style="text-align: center">Say HI to Us!!</h2>
-                    <div class="map-responsive">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.5129585806717!2d77.35659471438466!3d28.61438448242501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce541dc34567f%3A0x4fd027cb23d66b19!2sJSS+Academy+Of+Technical+Education!5e0!3m2!1sen!2sin!4v1498290804656" width="600" height="450" frameborder="0" style="border:0"></iframe>
-                    </div>
-                </div>
 
-                <div class="col-lg-6">
+            <div class="col-lg-6 animated fadeInDown">
+                <div class="row">
+                    <h2 style="text-align:center">Contact form</h2>
                     <div class="row">
-                        <div class="row animated fadeInDown">
-                            <h3>Contact form</h3>
-                            <div class="col-md-10">
-                                <form id="contact-form" method="post" action="contact.php" role="form">
-                                    <div class="messages"></div>
-                                    <div class="controls">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_name">Firstname *</label>
-                                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_lastname">Lastname *</label>
-                                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
+                        <div class="col-md-10 col-md-offset-1">
+                            <form id="contact-form" method="post" action="contact.php" role="form">
+                                <div class="messages"></div>
+                                <div class="controls">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_name">Firstname *</label>
+                                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_email">Email *</label>
-                                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_phone">Subject</label>
-                                                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter the subject">
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_lastname">Lastname *</label>
+                                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label for="form_message">Message *</label>
-                                                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for us *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                            <div class="row" id="btn">
-                                                <div class="col-md-10">
-                                                    <input type="submit" class="btn btn-success btn-send" value="Send message">
-                                                </div>
-                                            </div>
-                                            <div class="row" id="btn">
-                                                <div class="col-md-10">
-                                                    <div class="text-muted"><strong>*</strong> These fields are required.</div>
-                                                </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_email">Email *</label>
+                                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
-                                </form>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_phone">Subject</label>
+                                                <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter the subject">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="form_message">Message *</label>
+                                                <textarea id="form_message" name="message" class="form-control" placeholder="Message for us *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row" id="btn">
+                                            <div class="col-md-10 col-md-offset-1">
+                                                <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                            </div>
+                                        </div>
+                                        <div class="row" id="btn">
+                                            <div class="col-md-10">
+                                                <div class="text-muted"><strong>*</strong> These fields are required.</div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        </form>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </p>
-    </div>
-    </p>
-    </div>
-    </p>
-    </div>
-    </div>
-    </div>
     </div>
 
     <hr>
@@ -183,7 +156,6 @@
                 <a href="index.html" data-toggle="tooltip" data-placement="top" class="tool" title="to the top"><i class="fa fa-chevron-up fa-1x fa-bw" style="float: right;color: white; margin-right:20px;"></i></a></p>
         </div>
     </footer>
-    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript">
@@ -210,7 +182,6 @@
             });
             $('[data-toggle="tooltip"]').tooltip();
         });
-
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
