@@ -15,7 +15,7 @@ h6 {
 }
 
 .topnav {
-    font-size: 14px;
+    font-size: 1.8rem;
     background-color: rgba(40, 55, 71, 1);
     border: none;
     padding-top: 0.5rem;
@@ -50,11 +50,13 @@ p {
 .navbar-default .navbar-nav>li>a:hover {
     color: white;
     font-family: 'Quicksand', sans-serif;
+    letter-spacing: 0.1rem;
+    font-size: 1.8rem;
     background-color: rgba(234, 236, 238, 0.1);
     outline: none;
 }
 
-li:after {
+.nav>li:after {
     content: '';
     display: block;
     margin: auto;
