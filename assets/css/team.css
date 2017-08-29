@@ -10,6 +10,10 @@
     background-color: #eee;
 }
 
+#androiddevhead {
+    font-size: 1.9rem;
+}
+
 .head-title {
     color: #148F77;
     font-size: 3.2rem;

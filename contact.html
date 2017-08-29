@@ -46,34 +46,43 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div class="row animated fadeInDown">
-            <div class="col-xs-4">
-                <img src="assets/img/Icons/place.png">
-                <p>C-20/1, Sector-62, Noida</p>
+    <div class="container animated fadeInDown">
+        <div class="col-md-4 logo">
+            <div class="panel panel-primary">
+                <div class="panel-body"><i class="fa fa-map-marker fa-5x "></i></div>
+                <div class="panel-footer">
+                    <h5 id="a1">C-20/1, Sector-62, Noida</h5>
+                </div>
             </div>
-            <div class="col-xs-4">
-                <img src="assets/img/Icons/contact.png">
-                <p>+91 8569741524</p>
+        </div>
+        <div class="col-md-4 logo">
+            <div class="panel panel-primary">
+                <div class="panel-body"><i class="fa fa-phone fa-5x "></i></div>
+                <div class="panel-footer">
+                    <h5 id="a1">+91 9632587412</h5>
+                </div>
             </div>
-            <div class="col-xs-4">
-                <img src="assets/img/Icons/mail.png">
-                <p>microsoft@jssaten.in</p>
+        </div>
+        <div class="col-md-4 logo">
+            <div class="panel panel-primary">
+                <div class="panel-body"><i class="fa fa-envelope fa-5x "></i></div>
+                <div class="panel-footer">
+                    <h5 id="a1">example@jssaten.in</h5>
+                </div>
             </div>
         </div>
 
 
         <div class="row">
             <div class="col-lg-6 animated fadeInDown">
-                <h2 style="text-align: center">Say 'Hi!' to us</h2>
                 <div class="map-responsive">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.5129585806717!2d77.35659471438466!3d28.61438448242501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce541dc34567f%3A0x4fd027cb23d66b19!2sJSS+Academy+Of+Technical+Education!5e0!3m2!1sen!2sin!4v1498290804656" width="600" height="450" frameborder="0" style="border:0"></iframe>
+                    <iframe id="mapframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.5129585806717!2d77.35659471438466!3d28.61438448242501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce541dc34567f%3A0x4fd027cb23d66b19!2sJSS+Academy+Of+Technical+Education!5e0!3m2!1sen!2sin!4v1498290804656" width="600" height="450" frameborder="0" style="border:0"></iframe>
                 </div>
             </div>
 
-            <div class="col-lg-6 animated fadeInDown">
+            <div class="col-lg-6 animated fadeInDown contactform">
                 <div class="row">
-                    <h2 style="text-align:center">Contact form</h2>
+                    <h2 style="text-align:center" id="contact">Contact us:</h2>
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1">
                             <form id="contact-form" method="post" action="contact.php" role="form">
@@ -182,19 +191,6 @@
             });
             $('[data-toggle="tooltip"]').tooltip();
         });
-        $('.smoothScroll').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 700);
-                    return false;
-                }
-            }
-        });
-
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
