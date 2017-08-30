@@ -15,10 +15,16 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/contact.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        jQuery(window).load(function() {
+            jQuery(".loader").fadeOut(300);
+        });
+    </script>
 
 </head>
 
-<body>
+<body id="top">
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container-fluid topnav">
             <div class="navbar-header">
@@ -162,7 +168,7 @@
     <footer class="footer" style="margin-bottom:-10px">
         <div class="inline-block">
             <p class="copy" style="text-align: center;">&copy; copyright@2017
-                <a href="index.html" data-toggle="tooltip" data-placement="top" class="tool" title="to the top"><i class="fa fa-chevron-up fa-1x fa-bw" style="float: right;color: white; margin-right:20px;"></i></a></p>
+                <a href="#top" title="Top" class="smoothScroll"><i class="fa fa-chevron-up fa-1x fa-bw" style="float: right;color: white; margin-right:20px;"></i></a></p>
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -189,7 +195,20 @@
                     }
                 });
             });
-            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+    <script>
+        $('.smoothScroll').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 700);
+                    return false;
+                }
+            }
         });
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

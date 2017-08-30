@@ -31,6 +31,32 @@ h6 {
     background-color: #ddd;
 }
 
+.loader {
+    position: absolute;
+    z-index: 99999;
+    top: 41%;
+    left: 43.45%;
+    height: 200px;
+    width: 200px;
+    border: 10px solid #283747;
+    border-bottom: 10px solid #128f77;
+    border-top: 10px solid #128f77;
+    border-radius: 50%;
+    animation: rotate ease 1.5s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
 .topnav {
     font-size: 1.8rem;
     background-color: rgba(40, 55, 71, 1);
