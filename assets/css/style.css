@@ -343,16 +343,6 @@ h5 {
     font-family: 'Montserrat', sans-serif;
 }
 
-.tool+.tooltip>.tooltip-inner {
-    background-color: black;
-    margin-left: 128rem;
-}
-
-.tool+.tooltip>.tooltip-arrow {
-    border-top-color: black;
-    margin-left: 125rem;
-}
-
 @media(max-width:767px) {
     .intro-message {
         padding-bottom: 15%;
@@ -460,6 +450,12 @@ h5 {
     font-weight: 300;
 }
 
+.event-object button:focus,
+.event-object button:active {
+    outline: none;
+    border: none;
+}
+
 .event-blocks {
     margin: 15.5rem 0;
 }
@@ -485,7 +481,8 @@ h5 {
     display: inline-block;
 }
 
-#zealicon {
+#zealicon,
+#alumni {
     position: absolute;
     top: 12rem;
     right: 3rem;
@@ -495,13 +492,55 @@ h5 {
     border: none;
 }
 
-#zealicon:hover {
-    background-color: #fff;
-    color: #148f77;
+#zealicon:hover,
+#alumni:hover {
+    background-color: rgba(8, 56, 47, 0.9);
 }
 
 #zealicon:active,
-#zealicon:focus {
+#zealicon:focus,
+#alumni:active,
+#alumni:focus {
     outline: none;
     border: none;
+}
+
+.form footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+body.form {
+    overflow-y: hidden;
+}
+
+
+/*-----------Form-----------*/
+
+.register {
+    margin-top: 15rem;
+    text-align: center;
+}
+
+.register form {
+    margin-top: 4rem;
+}
+
+#submitbtn input {
+    margin: 4rem 0;
+    width: 95%;
+}
+
+@media only screen and (orientation: portrait) {
+    .register {
+        margin-top: 7rem;
+    }
+    .register form {
+        margin-top: -0.2rem;
+    }
+    #submitbtn input {
+        margin-top: 0rem;
+    }
 }
