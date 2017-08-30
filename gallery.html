@@ -11,11 +11,18 @@
     <link href="assets/css/animate.css" rel="stylesheet">
     <link rel="icon" href="assets/img/logo3.png" type="image/jpg">
     <link href="assets/css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Josefin+Slab:300" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        jQuery(window).load(function() {
+            jQuery(".loader").fadeOut(300);
+        });
+
+    </script>
 
 </head>
 
-<body>
+<body id="top">
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container-fluid topnav">
             <div class="navbar-header">
@@ -81,9 +88,24 @@
     <footer class="footer">
         <div class="inline-block">
             <p class="copy text-center">&copy; copyright@2017
-                <a href="team.html" data-toggle="tooltip" data-placement="left" title="to the top"><i class="fa fa-chevron-up fa-1x fa-bw" style="float: right;color: white;  margin-right:20px;"></i></a></p>
+                <a href="#top" title="Top" class="smoothScroll"><i class="fa fa-chevron-up fa-1x fa-bw" style="float: right;color: white;  margin-right:20px;"></i></a></p>
         </div>
     </footer>
+    <script>
+        $('.smoothScroll').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 700);
+                    return false;
+                }
+            }
+        });
+
+    </script>
 </body>
 
 </html>

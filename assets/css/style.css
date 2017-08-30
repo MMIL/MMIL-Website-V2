@@ -31,6 +31,32 @@ h6 {
     background-color: #ddd;
 }
 
+.loader {
+    position: absolute;
+    z-index: 99999;
+    top: 41%;
+    left: 43.45%;
+    height: 200px;
+    width: 200px;
+    border: 10px solid #283747;
+    border-bottom: 10px solid #128f77;
+    border-top: 10px solid #128f77;
+    border-radius: 50%;
+    animation: rotate ease 1.5s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
 .topnav {
     font-size: 1.8rem;
     background-color: rgba(40, 55, 71, 1);
@@ -50,6 +76,7 @@ h6 {
     outline: none;
     margin-top: 1rem;
     font-weight: 300;
+    background-color: #283747;
 }
 
 .navbar-header p {
@@ -107,9 +134,14 @@ li:hover:after {
     border-bottom: none;
 }
 
+.collapse {
+    background-color: #283747;
+    border: none;
+}
+
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
-    background-color: transparent;
+    background-color: rgba(234, 236, 238, 0.1);
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -311,16 +343,6 @@ h5 {
     font-family: 'Montserrat', sans-serif;
 }
 
-.tool+.tooltip>.tooltip-inner {
-    background-color: black;
-    margin-left: 128rem;
-}
-
-.tool+.tooltip>.tooltip-arrow {
-    border-top-color: black;
-    margin-left: 125rem;
-}
-
 @media(max-width:767px) {
     .intro-message {
         padding-bottom: 15%;
@@ -428,6 +450,12 @@ h5 {
     font-weight: 300;
 }
 
+.event-object button:focus,
+.event-object button:active {
+    outline: none;
+    border: none;
+}
+
 .event-blocks {
     margin: 15.5rem 0;
 }
@@ -453,7 +481,8 @@ h5 {
     display: inline-block;
 }
 
-#zealicon {
+#zealicon,
+#alumni {
     position: absolute;
     top: 12rem;
     right: 3rem;
@@ -463,13 +492,55 @@ h5 {
     border: none;
 }
 
-#zealicon:hover {
-    background-color: #fff;
-    color: #148f77;
+#zealicon:hover,
+#alumni:hover {
+    background-color: rgba(8, 56, 47, 0.9);
 }
 
 #zealicon:active,
-#zealicon:focus {
+#zealicon:focus,
+#alumni:active,
+#alumni:focus {
     outline: none;
     border: none;
+}
+
+.form footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+body.form {
+    overflow-y: hidden;
+}
+
+
+/*-----------Form-----------*/
+
+.register {
+    margin-top: 15rem;
+    text-align: center;
+}
+
+.register form {
+    margin-top: 4rem;
+}
+
+#submitbtn input {
+    margin: 4rem 0;
+    width: 95%;
+}
+
+@media only screen and (orientation: portrait) {
+    .register {
+        margin-top: 7rem;
+    }
+    .register form {
+        margin-top: -0.2rem;
+    }
+    #submitbtn input {
+        margin-top: 0rem;
+    }
 }

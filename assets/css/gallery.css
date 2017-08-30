@@ -15,6 +15,32 @@
     color: #fff;
 }
 
+.loader {
+    position: absolute;
+    z-index: 99999;
+    top: 41%;
+    left: 43.45%;
+    height: 200px;
+    width: 200px;
+    border: 10px solid #283747;
+    border-bottom: 10px solid #128f77;
+    border-top: 10px solid #128f77;
+    border-radius: 50%;
+    animation: rotate ease 1.5s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
 #container {
     width: 100%;
     max-width: 100%;

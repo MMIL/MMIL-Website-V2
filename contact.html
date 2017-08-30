@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact</title>
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -14,11 +14,18 @@
     <link rel="icon" href="assets/img/logo3.png" type="image/jpg">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/contact.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Josefin+Slab:300" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        jQuery(window).load(function() {
+            jQuery(".loader").fadeOut(300);
+        });
+
+    </script>
 
 </head>
 
-<body>
+<body id="top">
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container-fluid topnav">
             <div class="navbar-header">
@@ -82,7 +89,7 @@
 
             <div class="col-lg-6 animated fadeInDown contactform">
                 <div class="row">
-                    <h2 style="text-align:center" id="contact">Contact us:</h2>
+                    <h2 style="text-align:center" id="contact">Contact Us</h2>
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1">
                             <form id="contact-form" method="post" action="contact.php" role="form">
@@ -134,7 +141,7 @@
                                             </div>
                                         </div>
                                         <div class="row" id="btn">
-                                            <div class="col-md-10">
+                                            <div class="col-md-10 col-md-offset-1">
                                                 <div class="text-muted"><strong>*</strong> These fields are required.</div>
                                             </div>
                                         </div>
@@ -162,7 +169,7 @@
     <footer class="footer" style="margin-bottom:-10px">
         <div class="inline-block">
             <p class="copy" style="text-align: center;">&copy; copyright@2017
-                <a href="index.html" data-toggle="tooltip" data-placement="top" class="tool" title="to the top"><i class="fa fa-chevron-up fa-1x fa-bw" style="float: right;color: white; margin-right:20px;"></i></a></p>
+                <a href="#top" title="Top" class="smoothScroll"><i class="fa fa-chevron-up fa-1x fa-bw" style="float: right;color: white; margin-right:20px;"></i></a></p>
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -189,8 +196,23 @@
                     }
                 });
             });
-            $('[data-toggle="tooltip"]').tooltip();
         });
+
+    </script>
+    <script>
+        $('.smoothScroll').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 700);
+                    return false;
+                }
+            }
+        });
+
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
