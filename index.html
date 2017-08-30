@@ -16,7 +16,6 @@
 </head>
 
 <body>
-
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container-fluid topnav">
 
@@ -97,7 +96,7 @@
     <footer class="footer">
         <div class="inline-block">
             <p class="copy" style="text-align: center;">&copy; copyright@2017
-                <a href="index.html" data-toggle="tooltip" data-placement="top" class="tool" title="to the top"><i class="fa fa-chevron-up fa-1x fa-bw" style="float: right;color: white; margin-right:20px;"></i></a></p>
+                <a href="#top" data-toggle="tooltip" data-placement="top" class="tool" title="to the top"><i class="fa fa-chevron-up fa-1x fa-bw" style="float: right;color: white; margin-right:20px;"></i></a></p>
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -114,17 +113,18 @@
                         window.location.hash = hash;
                     });
                 }
+
             });
             $(window).scroll(function() {
                 $(".slideanim").each(function() {
                     var pos = $(this).offset().top;
+
                     var winTop = $(window).scrollTop();
                     if (pos < winTop + 600) {
                         $(this).addClass("slide");
                     }
                 });
             });
-
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script>

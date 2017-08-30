@@ -10,6 +10,11 @@
     background-color: #eee;
 }
 
+::selection {
+    background-color: #148f77;
+    color: #fff;
+}
+
 .container {
     text-align: center;
     margin-top: 10%;
@@ -21,8 +26,16 @@
     margin-top: 10px;
 }
 
-.row {
-    margin-bottom: 5rem;
+.contactform .row {
+    margin: 2rem 0;
+}
+
+.contactform {
+    margin: 2rem 0;
+}
+
+#mapframe {
+    margin: 5rem 0;
 }
 
 .map-responsive {
@@ -54,6 +67,81 @@
     color: white;
     text-align: center;
     padding-bottom: 2rem;
+}
+
+.col-md-4 {
+    padding-left: -1rem;
+}
+
+.panel-primary {
+    margin-top: -2rem;
+    vertical-align: center;
+    text-align: center;
+    margin-bottom: 10rem;
+    background-color: transparent;
+    border: none;
+}
+
+.panel-primary .panel-body {
+    padding-bottom: 6rem;
+    padding-left: -2rem;
+    padding-right: -2rem;
+    background-color: transparent;
+    border: none;
+}
+
+.panel-primary .panel-footer {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+
+.panel-footer h5 {
+    font-size: 2rem;
+    font-weight: 400
+}
+
+.fa-phone:hover,
+.fa-map-marker:hover,
+.fa-envelope:hover {
+    filter: opacity(0.8);
+}
+
+.fa-phone:before {
+    background-color: #2D8A80;
+    color: white;
+    padding: 5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    border-radius: 50%;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.fa-envelope:before {
+    background-color: #2D8A80;
+    padding: 5rem;
+    border-radius: 50%;
+    color: white;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.fa-map-marker:before {
+    background-color: #2D8A80;
+    padding: 5rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    border-radius: 50%;
+    color: white;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
 }
 
 .slideanim {

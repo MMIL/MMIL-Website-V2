@@ -10,6 +10,11 @@
     background-color: #eee;
 }
 
+::selection {
+    background-color: #148f77;
+    color: #fff;
+}
+
 .section-padding {
     padding: 100px 0px;
 }
