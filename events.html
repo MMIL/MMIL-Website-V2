@@ -44,7 +44,7 @@
                     <li><a href="about.html" id="link">About</a></li>
                     <li><a href="project.html" id="link">Projects</a></li>
                     <li><a href="achievement.html" id="link">Achievements</a></li>
-                    <li class="active"><a href="events.html" id="link">Events</a></li>
+                    <li><a href="events.html" id="link">Events</a></li>
                     <li><a href="team.html" id="link">Team</a></li>
                     <li><a href="contact.html" id="link">Contact</a></li>
                     <li><a href="gallery.html" id="link">Gallery</a></li>
@@ -163,6 +163,34 @@
                 <a href="#top" title="Top" class="smoothScroll"><i class="fa fa-chevron-up fa-1x fa-bw" style="float: right;color: white; margin-right:20px;"></i></a></p>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".navbar a, #navbar-fixed-bottom").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 5000, function() {
+                        window.location.hash = hash;
+                    });
+                }
+
+            });
+            $(window).scroll(function() {
+                $(".slideanim").each(function() {
+                    var pos = $(this).offset().top;
+
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
+        });
+    </script>
     <script>
         $('.smoothScroll').click(function() {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {

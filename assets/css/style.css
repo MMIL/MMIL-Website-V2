@@ -76,6 +76,7 @@ h6 {
     outline: none;
     margin-top: 1rem;
     font-weight: 300;
+    background-color: #283747;
 }
 
 .navbar-header p {
@@ -133,9 +134,14 @@ li:hover:after {
     border-bottom: none;
 }
 
+.collapse {
+    background-color: #283747;
+    border: none;
+}
+
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
-    background-color: transparent;
+    background-color: rgba(234, 236, 238, 0.1);
 }
 
 .navbar-default .navbar-toggle .icon-bar {

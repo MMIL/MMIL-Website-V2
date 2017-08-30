@@ -117,6 +117,11 @@ h6 {
     font-weight: 300;
 }
 
+.collapse {
+    background-color: #283747;
+    border: none;
+}
+
 .nav>li:after {
     content: '';
     display: block;
