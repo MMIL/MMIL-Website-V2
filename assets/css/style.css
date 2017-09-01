@@ -533,7 +533,7 @@ body.form {
     width: 95%;
 }
 
-@media only screen and (orientation: portrait) {
+@media only screen and (max-width:768px) {
     .register {
         margin-top: 7rem;
     }
@@ -542,5 +542,11 @@ body.form {
     }
     #submitbtn input {
         margin-top: 0rem;
+    }
+    .event-object button {
+        margin-bottom: 2rem;
+    }
+    .event-object {
+        margin: 0 0;
     }
 }
