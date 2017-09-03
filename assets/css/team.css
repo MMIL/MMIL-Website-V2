@@ -65,19 +65,18 @@
     font-weight: 400;
 }
 
-@media only screen and (max-width:768px) {
-    .text-center img {
-        position: relative;
-        left: 25%;
-    }
-}
-
 .container h5 {
     font-family: 'Lato', sans-serif;
     font-size: 2rem;
     font-weight: 500;
     letter-spacing: 0.1rem;
     margin: -0.1px 0;
+}
+
+center img {
+    position: relative;
+    right: 12px;
+    margin-top: 5rem;
 }
 
 #alumni-team h4 {
@@ -113,12 +112,11 @@
 
 #our-team {
     margin-bottom: -5rem;
+    margin-top: 2rem;
 }
 
-#alumni-team {
-    margin-bottom: 5rem;
-}
-
-#alumni-team .row {
-    margin: 5rem 0;
+@media only screen and (max-width:768px) {
+    .row:first-child>.col-md-3:first-child {
+        margin-top: -75px;
+    }
 }

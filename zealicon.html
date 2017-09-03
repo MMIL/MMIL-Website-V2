@@ -22,6 +22,7 @@
 </head>
 
 <body id="top">
+    <div class="loader"></div>
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container-fluid topnav">
 
@@ -51,31 +52,32 @@
         </div>
     </nav>
     <div class="container events">
-        <div class="event-blocks">
-            <div class="row">
-                <div class="col-md-4">
-                    <h1 class="head-title">Zealicon Events</h1>
-                    <hr class="botm-line">
+        <div class="event-blocks-zealicon">
+            <div class=" row ">
+                <div class="col-md-4 ">
+                    <h1 class="head-title ">Zealicon Events</h1>
+                    <hr class="botm-line ">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="event-object">
-                        <img src="assets/img/slide-dark.jpg" />
+            <a href="events.html"><button id="zealicon" class="btn">Back</button></a>
+            <div class="row ">
+                <div class="col-md-4 ">
+                    <div class="event-object ">
+                        <img src="assets/img/slide-dark.jpg " />
                         <h4>Lorem Ipsum</h4>
                         <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, recusandae nesciunt earum unde</h5>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="event-object">
-                        <img src="assets/img/slide-dark.jpg" />
+                <div class="col-md-4 ">
+                    <div class="event-object ">
+                        <img src="assets/img/slide-dark.jpg " />
                         <h4>Lorem Ipsum</h4>
                         <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, recusandae nesciunt earum unde</h5>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="event-object">
-                        <img src="assets/img/slide-dark.jpg" />
+                <div class="col-md-4 ">
+                    <div class="event-object ">
+                        <img src="assets/img/slide-dark.jpg " />
                         <h4>Lorem Ipsum</h4>
                         <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, recusandae nesciunt earum unde</h5>
                     </div>
@@ -83,18 +85,18 @@
             </div>
         </div>
     </div>
-    <footer class="footer">
-        <div class="inline-block">
-            <p class="copy" style="text-align: center;">&copy; copyright@2017
-                <a href="#top" title="Top" class="smoothScroll"><i class="fa fa-chevron-up fa-1x fa-bw" style="float: right;color: white; margin-right:20px;"></i></a></p>
+    <footer class="footer ">
+        <div class="inline-block ">
+            <p class="copy " style="text-align: center; ">&copy; copyright@2017
+                <a href="#top " title="Top " class="smoothScroll "><i class="fa fa-chevron-up fa-1x fa-bw " style="float: right;color: white; margin-right:20px; "></i></a></p>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <script src="assets/js/bootstrap.min.js "></script>
+    <script type="text/javascript ">
         $(document).ready(function() {
-            $(".navbar a, #navbar-fixed-bottom").on('click', function(event) {
-                if (this.hash !== "") {
+            $(".navbar a, #navbar-fixed-bottom ").on('click', function(event) {
+                if (this.hash !== " ") {
                     event.preventDefault();
                     var hash = this.hash;
                     $('html, body').animate({
@@ -106,12 +108,12 @@
 
             });
             $(window).scroll(function() {
-                $(".slideanim").each(function() {
+                $(".slideanim ").each(function() {
                     var pos = $(this).offset().top;
 
                     var winTop = $(window).scrollTop();
                     if (pos < winTop + 600) {
-                        $(this).addClass("slide");
+                        $(this).addClass("slide ");
                     }
                 });
             });

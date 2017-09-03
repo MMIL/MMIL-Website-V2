@@ -20,12 +20,12 @@
         jQuery(window).load(function() {
             jQuery(".loader").fadeOut(300);
         });
-
     </script>
 
 </head>
 
 <body id="top">
+    <div class="loader"></div>
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container-fluid topnav">
             <div class="navbar-header">
@@ -88,66 +88,68 @@
             </div>
 
             <div class="col-lg-6 animated fadeInDown contactform">
-                <div class="row">
-                    <h2 style="text-align:center" id="contact">Contact Us</h2>
-                    <div class="row">
-                        <div class="col-md-10 col-md-offset-1">
-                            <form id="contact-form" method="post" action="contact.php" role="form">
-                                <div class="messages"></div>
-                                <div class="controls">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="form_name">Firstname *</label>
-                                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                                                <div class="help-block with-errors"></div>
+                <div class="map-responsive">
+                    <div class="row" id="contactform">
+                        <h2 style="text-align:center" id="contact">Contact Us</h2>
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1">
+                                <form id="contact-form" method="post" action="contact.php" role="form">
+                                    <div class="messages"></div>
+                                    <div class="controls">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_name">Firstname *</label>
+                                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_lastname">Lastname *</label>
+                                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="form_lastname">Lastname *</label>
-                                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
-                                                <div class="help-block with-errors"></div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_email">Email *</label>
+                                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_phone">Subject</label>
+                                                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter the subject">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="form_message">Message *</label>
+                                                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for us *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="row" id="btn">
+                                                <div class="col-md-10 col-md-offset-1">
+                                                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                                </div>
+                                            </div>
+                                            <div class="row" id="btn">
+                                                <div class="col-md-10 col-md-offset-1">
+                                                    <div class="text-muted"><strong>*</strong> These fields are required.</div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="form_email">Email *</label>
-                                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="form_phone">Subject</label>
-                                                <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter the subject">
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label for="form_message">Message *</label>
-                                                <textarea id="form_message" name="message" class="form-control" placeholder="Message for us *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div class="row" id="btn">
-                                            <div class="col-md-10 col-md-offset-1">
-                                                <input type="submit" class="btn btn-success btn-send" value="Send message">
-                                            </div>
-                                        </div>
-                                        <div class="row" id="btn">
-                                            <div class="col-md-10 col-md-offset-1">
-                                                <div class="text-muted"><strong>*</strong> These fields are required.</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -158,11 +160,11 @@
     <hr>
 
     <h3 style="text-align: center">Our Social Sites</h3>
-    <ul class="list-inline banner-social-buttons" style="text-align: center">
-        <li><a href="#" class="btn btn-default btn-sm"><i class="fa fa-google-plus"> <span class="network-name">Gmail</span></i></a></li>
-        <li><a href="#" class="btn btn-default btn-sm"><i class="fa fa-facebook-square"> <span class="network-name">Facebook</span></i></a></li>
-        <li><a href="#" class="btn btn-default btn-sm"><i class="fa fa-linkedin-square"> <span class="network-name">Linkedin</span></i></a></li>
-    </ul>
+    <div class="list-inline banner-social-buttons" style="text-align: center">
+        <a href="#"><i class="fa fa-google-plus-square"></i></a>
+        <a href="#"><i class="fa fa-facebook-square"></i></a>
+        <a href="#"><i class="fa fa-linkedin-square"></i></a>
+    </div>
 
 
 
@@ -197,7 +199,6 @@
                 });
             });
         });
-
     </script>
     <script>
         $('.smoothScroll').click(function() {
@@ -212,7 +213,6 @@
                 }
             }
         });
-
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>

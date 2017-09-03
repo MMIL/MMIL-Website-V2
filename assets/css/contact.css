@@ -52,14 +52,6 @@
     margin-top: 10px;
 }
 
-.contactform .row {
-    margin: 2rem 0;
-}
-
-.contactform {
-    margin: 2rem 0;
-}
-
 #mapframe {
     margin: 5rem 0;
 }
@@ -76,6 +68,24 @@
     height: 80%;
     width: 90%;
     position: absolute;
+}
+
+.map-responsive #contactform {
+    top: 50px;
+    left: 0;
+    height: 80%;
+    width: 90%;
+    position: absolute;
+    background: rgba(18, 143, 119, 0.2);
+}
+
+#contactform h2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.text-muted {
+    margin-top: 20px;
 }
 
 #btn {
@@ -170,6 +180,22 @@
     transition: .5s;
 }
 
+.banner-social-buttons {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.banner-social-buttons a {
+    color: rgba(40, 55, 71, 1);
+    margin: 1rem;
+    transition: color .3s;
+}
+
+.banner-social-buttons a:hover {
+    color: #128f77;
+    cursor: pointer;
+}
+
 .slideanim {
     visibility: hidden;
 }
@@ -201,5 +227,20 @@
     100% {
         opacity: 1;
         -webkit-transform: translateY(0%);
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .panel-body:first-child {
+        margin-top: 75px;
+    }
+    #mail {
+        margin-bottom: -300px;
+    }
+    iframe {
+        display: none;
+    }
+    .contactform {
+        display: none;
     }
 }

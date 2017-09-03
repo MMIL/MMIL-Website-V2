@@ -42,7 +42,7 @@ h6 {
     border-bottom: 10px solid #128f77;
     border-top: 10px solid #128f77;
     border-radius: 50%;
-    animation: rotate ease 1.5s infinite;
+    animation: rotate ease 1s infinite;
 }
 
 @keyframes rotate {
@@ -157,8 +157,7 @@ li:hover:after {
     margin-bottom: 8px;
     background-color: transparent;
     background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
+    border: none;
 }
 
 .intro-header {
@@ -169,6 +168,7 @@ li:hover:after {
     color: #f8f8f8;
     background: url(../img/slide-dark.jpg) no-repeat center center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .intro-message {
@@ -206,6 +206,38 @@ li:hover:after {
     letter-spacing: 0.3rem;
     font-size: 3.5rem;
     font-weight: 300;
+}
+
+#registerinfo {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 30rem;
+    padding: 1% 5%;
+    text-align: left;
+    position: relative;
+    top: -10rem;
+    right: 10rem;
+    border-radius: 5px;
+    transition: box-shadow 0.2s;
+}
+
+#registerinfo:hover {
+    box-shadow: 0 0 20px #666;
+}
+
+@media only screen and (max-width:768px) {
+    #registerinfo {
+        display: none;
+    }
+}
+
+#registerinfo a {
+    color: orange;
+}
+
+#registerinfo a:hover {
+    color: #ccc;
+    text-decoration: none;
 }
 
 .col-md-4 {
@@ -460,6 +492,10 @@ h5 {
     margin: 15.5rem 0;
 }
 
+.event-blocks-zealicon {
+    margin: 15.5rem 0;
+}
+
 .head-title {
     color: #148F77;
     font-size: 3.2rem;
@@ -548,5 +584,9 @@ body.form {
     }
     .event-object {
         margin: 0 0;
+    }
+    .event-blocks:last-child {
+        margin-top: -100px;
+        margin-bottom: 50px;
     }
 }
