@@ -32,12 +32,16 @@ h6 {
 }
 
 .loader {
+    display: block;
     position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
     z-index: 99999;
-    top: 41%;
-    left: 43.45%;
-    height: 200px;
-    width: 200px;
+    margin: auto;
+    height: 150px;
+    width: 150px;
     border: 10px solid #283747;
     border-bottom: 10px solid #128f77;
     border-top: 10px solid #128f77;
@@ -231,6 +235,12 @@ li:hover:after {
     }
 }
 
+@media only screen and (min-width:768px) and (max-width:957px) {
+    .navbar-default .navbar-nav>li>a {
+        font-size: 1rem;
+    }
+}
+
 #registerinfo a {
     color: orange;
 }
@@ -319,6 +329,16 @@ h5 {
     font-weight: bold;
 }
 
+.panel a {
+    color: rgba(40, 55, 71, 1);
+    font-weight: 600;
+}
+
+.panel a:hover {
+    color: #128f77;
+    text-decoration: none;
+}
+
 .panel-default {
     margin-top: -4rem;
     margin-bottom: 10rem;
@@ -375,7 +395,7 @@ h5 {
     font-family: 'Montserrat', sans-serif;
 }
 
-@media(max-width:767px) {
+@media(max-width:768px) {
     .intro-message {
         padding-bottom: 15%;
     }
@@ -541,52 +561,25 @@ h5 {
     border: none;
 }
 
-.form footer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-}
-
-body.form {
-    overflow-y: hidden;
-}
-
 
 /*-----------Form-----------*/
 
 .register {
     margin-top: 15rem;
-    text-align: center;
+    margin-bottom: 2rem;
 }
 
-.register form {
-    margin-top: 4rem;
+.registerform {
+    margin-bottom: 15rem;
 }
 
-#submitbtn input {
-    margin: 4rem 0;
-    width: 95%;
+.btn-success {
+    width: 100%;
 }
 
-@media only screen and (max-width:768px) {
-    .register {
-        margin-top: 7rem;
-    }
-    .register form {
-        margin-top: -0.2rem;
-    }
-    #submitbtn input {
-        margin-top: 0rem;
-    }
-    .event-object button {
-        margin-bottom: 2rem;
-    }
-    .event-object {
-        margin: 0 0;
-    }
-    .event-blocks:last-child {
-        margin-top: -100px;
-        margin-bottom: 50px;
-    }
+.footer {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
