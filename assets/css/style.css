@@ -32,17 +32,21 @@ h6 {
 }
 
 .loader {
+    display: block;
     position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
     z-index: 99999;
-    top: 41%;
-    left: 43.45%;
-    height: 200px;
-    width: 200px;
+    margin: auto;
+    height: 150px;
+    width: 150px;
     border: 10px solid #283747;
     border-bottom: 10px solid #128f77;
     border-top: 10px solid #128f77;
     border-radius: 50%;
-    animation: rotate ease 1.5s infinite;
+    animation: rotate ease 1s infinite;
 }
 
 @keyframes rotate {
@@ -157,8 +161,7 @@ li:hover:after {
     margin-bottom: 8px;
     background-color: transparent;
     background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
+    border: none;
 }
 
 .intro-header {
@@ -169,6 +172,7 @@ li:hover:after {
     color: #f8f8f8;
     background: url(../img/slide-dark.jpg) no-repeat center center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .intro-message {
@@ -206,6 +210,33 @@ li:hover:after {
     letter-spacing: 0.3rem;
     font-size: 3.5rem;
     font-weight: 300;
+}
+
+#registerinfo {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 30rem;
+    padding: 1% 5%;
+    text-align: left;
+    float: left;
+    position: relative;
+    top: -10rem;
+    left: -10rem;
+    border-radius: 5px;
+    transition: box-shadow 0.2s;
+}
+
+#registerinfo:hover {
+    box-shadow: 0 0 20px #666;
+}
+
+#registerinfo a {
+    color: orange;
+}
+
+#registerinfo a:hover {
+    color: #ccc;
+    text-decoration: none;
 }
 
 .col-md-4 {
@@ -287,6 +318,16 @@ h5 {
     font-weight: bold;
 }
 
+.panel a {
+    color: rgba(40, 55, 71, 1);
+    font-weight: 600;
+}
+
+.panel a:hover {
+    color: #128f77;
+    text-decoration: none;
+}
+
 .panel-default {
     margin-top: -4rem;
     margin-bottom: 10rem;
@@ -343,7 +384,7 @@ h5 {
     font-family: 'Montserrat', sans-serif;
 }
 
-@media(max-width:767px) {
+@media(max-width:768px) {
     .intro-message {
         padding-bottom: 15%;
     }
@@ -365,6 +406,66 @@ h5 {
     }
     .panel-default {
         margin-top: -5rem;
+    }
+}
+
+@media(min-width:876px) and (max-width:956px) {
+    .navbar-default .navbar-nav>li>a {
+        font-size: 1.5rem;
+    }
+    .navbar-default .navbar-nav>li>a:focus {
+        font-size: 1.5rem;
+    }
+    .navbar-default .navbar-nav>li>a:hover {
+        font-size: 1.5rem;
+    }
+    #registerinfo {
+        width: 20rem;
+    }
+}
+
+@media(min-width:822px) and (max-width:876px) {
+    .navbar-default .navbar-nav>li>a {
+        font-size: 1.3rem;
+    }
+    .navbar-default .navbar-nav>li>a:focus {
+        font-size: 1.3rem;
+    }
+    .navbar-default .navbar-nav>li>a:hover {
+        font-size: 1.3rem;
+    }
+    #registerinfo {
+        width: 10rem;
+    }
+}
+
+@media(min-width:768px) and (max-width:822px) {
+    .navbar-default .navbar-nav>li>a {
+        font-size: 1rem;
+    }
+    .navbar-default .navbar-nav>li>a:hover {
+        font-size: 1rem;
+    }
+    .navbar-default .navbar-nav>li>a:focus {
+        font-size: 1rem;
+    }
+    #registerinfo {
+        width: 20rem;
+    }
+}
+
+@media(max-width:1024px) {
+    #registerinfo {
+        position: absolute;
+        right: 0;
+        left: 0;
+        float: none;
+    }
+}
+
+@media(max-width:769px) {
+    #registerinfo {
+        display: none;
     }
 }
 
@@ -460,6 +561,10 @@ h5 {
     margin: 15.5rem 0;
 }
 
+.event-blocks-zealicon {
+    margin: 15.5rem 0;
+}
+
 .head-title {
     color: #148F77;
     font-size: 3.2rem;
@@ -505,42 +610,25 @@ h5 {
     border: none;
 }
 
-.form footer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-}
-
-body.form {
-    overflow-y: hidden;
-}
-
 
 /*-----------Form-----------*/
 
 .register {
     margin-top: 15rem;
-    text-align: center;
+    margin-bottom: 2rem;
 }
 
-.register form {
-    margin-top: 4rem;
+.registerform {
+    margin-bottom: 15rem;
 }
 
-#submitbtn input {
-    margin: 4rem 0;
-    width: 95%;
+.btn-success {
+    width: 100%;
 }
 
-@media only screen and (orientation: portrait) {
-    .register {
-        margin-top: 7rem;
-    }
-    .register form {
-        margin-top: -0.2rem;
-    }
-    #submitbtn input {
-        margin-top: 0rem;
-    }
+.footer {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }

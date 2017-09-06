@@ -16,17 +16,21 @@
 }
 
 .loader {
+    display: block;
     position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
     z-index: 99999;
-    top: 41%;
-    left: 43.45%;
-    height: 200px;
-    width: 200px;
+    margin: auto;
+    height: 150px;
+    width: 150px;
     border: 10px solid #283747;
     border-bottom: 10px solid #128f77;
     border-top: 10px solid #128f77;
     border-radius: 50%;
-    animation: rotate ease 1.5s infinite;
+    animation: rotate ease 1s infinite;
 }
 
 @keyframes rotate {
@@ -52,30 +56,24 @@
     margin-top: 10px;
 }
 
-.contactform .row {
-    margin: 2rem 0;
+#map {
+    margin-top: -5rem;
 }
 
-.contactform {
-    margin: 2rem 0;
+#contactform {
+    background-color: rgba(18, 143, 119, 0.2);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
 }
 
-#mapframe {
-    margin: 5rem 0;
+#contactform h2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
-.map-responsive {
-    overflow: hidden;
-    position: relative;
-    height: 40vw;
-}
-
-.map-responsive iframe {
-    top: 5px;
-    left: 0;
-    height: 80%;
-    width: 90%;
-    position: absolute;
+.text-muted {
+    margin-top: 20px;
 }
 
 #btn {
@@ -170,6 +168,22 @@
     transition: .5s;
 }
 
+.banner-social-buttons {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.banner-social-buttons a {
+    color: rgba(40, 55, 71, 1);
+    margin: 1rem;
+    transition: color .3s;
+}
+
+.banner-social-buttons a:hover {
+    color: #128f77;
+    cursor: pointer;
+}
+
 .slideanim {
     visibility: hidden;
 }
@@ -202,4 +216,16 @@
         opacity: 1;
         -webkit-transform: translateY(0%);
     }
+}
+
+@media only screen and (max-width:768px) {
+    .panel-body:first-child {
+        margin-top: 75px;
+    }
+    #mail {
+        margin-bottom: -300px;
+    }
+}
+
+
 }

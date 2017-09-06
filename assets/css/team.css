@@ -16,17 +16,21 @@
 }
 
 .loader {
+    display: block;
     position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
     z-index: 99999;
-    top: 41%;
-    left: 43.45%;
-    height: 200px;
-    width: 200px;
+    margin: auto;
+    height: 150px;
+    width: 150px;
     border: 10px solid #283747;
     border-bottom: 10px solid #128f77;
     border-top: 10px solid #128f77;
     border-radius: 50%;
-    animation: rotate ease 1.5s infinite;
+    animation: rotate ease 1s infinite;
 }
 
 @keyframes rotate {
@@ -65,19 +69,18 @@
     font-weight: 400;
 }
 
-@media only screen and (max-width:768px) {
-    .text-center img {
-        position: relative;
-        left: 25%;
-    }
-}
-
 .container h5 {
     font-family: 'Lato', sans-serif;
     font-size: 2rem;
     font-weight: 500;
     letter-spacing: 0.1rem;
     margin: -0.1px 0;
+}
+
+center img {
+    position: relative;
+    right: 12px;
+    margin-top: 5rem;
 }
 
 #alumni-team h4 {
@@ -113,12 +116,11 @@
 
 #our-team {
     margin-bottom: -5rem;
+    margin-top: 2rem;
 }
 
-#alumni-team {
-    margin-bottom: 5rem;
-}
-
-#alumni-team .row {
-    margin: 5rem 0;
+@media only screen and (max-width:768px) {
+    .row:first-child>.col-md-3:first-child {
+        margin-top: -75px;
+    }
 }
