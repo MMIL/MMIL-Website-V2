@@ -66,7 +66,7 @@ h6 {
     font-size: 3.2rem;
 }
 
-.botm-line {
+.botm-line-about {
     background-color: #2b2b2b;
     width: 34px;
     height: 2px;
@@ -215,13 +215,13 @@ header.carousel-control {
     color: black;
 }
 
-.panel-default {
+.panel-default-about {
     border: none;
     background-color: transparent;
     margin-top: 3rem;
 }
 
-.panel-default .panel-heading {
+.panel-default-about .panel-heading-about {
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     background-color: transparent;
@@ -229,7 +229,7 @@ header.carousel-control {
     border-bottom: none;
 }
 
-.panel-default .panel-body {
+.panel-default-about .panel-body-about {
     color: grey;
     filter: opacity(0.8);
     font-family: 'Lato', sans-serif;
