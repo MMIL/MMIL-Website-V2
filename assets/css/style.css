@@ -218,27 +218,16 @@ li:hover:after {
     width: 30rem;
     padding: 1% 5%;
     text-align: left;
+    float: left;
     position: relative;
     top: -10rem;
-    right: 10rem;
+    left: -10rem;
     border-radius: 5px;
     transition: box-shadow 0.2s;
 }
 
 #registerinfo:hover {
     box-shadow: 0 0 20px #666;
-}
-
-@media only screen and (max-width:768px) {
-    #registerinfo {
-        display: none;
-    }
-}
-
-@media only screen and (min-width:768px) and (max-width:957px) {
-    .navbar-default .navbar-nav>li>a {
-        font-size: 1rem;
-    }
 }
 
 #registerinfo a {
@@ -417,6 +406,66 @@ h5 {
     }
     .panel-default {
         margin-top: -5rem;
+    }
+}
+
+@media(min-width:876px) and (max-width:956px) {
+    .navbar-default .navbar-nav>li>a {
+        font-size: 1.5rem;
+    }
+    .navbar-default .navbar-nav>li>a:focus {
+        font-size: 1.5rem;
+    }
+    .navbar-default .navbar-nav>li>a:hover {
+        font-size: 1.5rem;
+    }
+    #registerinfo {
+        width: 20rem;
+    }
+}
+
+@media(min-width:822px) and (max-width:876px) {
+    .navbar-default .navbar-nav>li>a {
+        font-size: 1.3rem;
+    }
+    .navbar-default .navbar-nav>li>a:focus {
+        font-size: 1.3rem;
+    }
+    .navbar-default .navbar-nav>li>a:hover {
+        font-size: 1.3rem;
+    }
+    #registerinfo {
+        width: 10rem;
+    }
+}
+
+@media(min-width:768px) and (max-width:822px) {
+    .navbar-default .navbar-nav>li>a {
+        font-size: 1rem;
+    }
+    .navbar-default .navbar-nav>li>a:hover {
+        font-size: 1rem;
+    }
+    .navbar-default .navbar-nav>li>a:focus {
+        font-size: 1rem;
+    }
+    #registerinfo {
+        width: 20rem;
+    }
+}
+
+@media(max-width:1024px) {
+    #registerinfo {
+        position: absolute;
+        right: 0;
+        left: 0;
+        float: none;
+    }
+}
+
+@media(max-width:769px) {
+    #registerinfo {
+        display: none;
     }
 }
 
