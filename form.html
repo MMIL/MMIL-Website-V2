@@ -57,7 +57,7 @@
         </div>
         <div class="row registerform animated fadeInDown">
             <div class="col-xs-10 col-xs-offset-1">
-                <form id="contact-form" method="post" action="contact.php" role="form">
+                <form method="post" action="form.php" role="form">
                     <div class="messages"></div>
                     <div class="controls">
                         <div class="row">
@@ -106,14 +106,20 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="form_year">Year</label>
-                                    <input id="form_year" type="tel" name="year" class="form-control" placeholder="Please enter your year">
+                                    <select id="form_year" name="year" class="form-control" required>
+										<option value="volvo" disabled>Select Your Year</option>
+										<option value="1">1st</option>
+										<option value="2">2nd</option>
+										<option value="3">3rd</option>
+										<option value="4">4th</option>
+									</select>
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="row" id="submitbtn">
                             <div class="col-xs-6 col-xs-offset-3">
-                                <input type="submit" class="btn btn-success btn-send" value="Submit">
+                                <input type="submit" class="btn btn-success btn-send" value="Register Now">
                             </div>
                         </div>
                     </div>
