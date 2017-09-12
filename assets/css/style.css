@@ -588,11 +588,21 @@ h5 {
     margin-top: 4px;
 }
 
-#zealicon,
+#zealicon{
+
+    position: absolute;
+    top: 18rem;
+    left: 13rem;
+    background-color: #148f77;
+    color: #fff;
+    transition: background-color .3s, color .3s;
+    border: none;
+
+}
 #alumni {
     position: absolute;
-    top: 12rem;
-    right: 3rem;
+    top: 16rem;
+    left: 13rem;
     background-color: #148f77;
     color: #fff;
     transition: background-color .3s, color .3s;
