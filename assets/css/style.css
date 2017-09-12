@@ -577,6 +577,7 @@ h5 {
     display: inline-block;
     position: relative;
     left: 9rem;
+    margin-top: 4px;
 }
 
 .bot-line {
@@ -584,6 +585,7 @@ h5 {
     width: 34px;
     height: 2px;
     display: inline-block;
+    margin-top: 4px;
 }
 
 #zealicon,
