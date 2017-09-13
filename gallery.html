@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Gallery</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="assets/css/gallery.css">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+    <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet">
     <link href="assets/css/animate.css" rel="stylesheet">
     <link rel="icon" href="assets/img/logo3.png" type="image/jpg">
     <link href="assets/css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Josefin+Slab:300" rel="stylesheet">
+    <link href="assets/css/gallery.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Josefin+Slab:300|Lato|Montserrat:300" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
         jQuery(window).load(function() {
@@ -19,24 +21,25 @@
         });
 
     </script>
-
 </head>
 
 <body id="top">
     <div class="loader"></div>
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container-fluid topnav">
+
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <a href="index.html" class="navbar-brand" title="Homepage"><img src="assets/img/logo3.png">
                     <p>MMIL</p>
                 </a>
             </div>
+
             <div class="collapse navbar-collapse navbar-right" id="mainNavbar">
                 <ul class="nav navbar-nav">
                     <li><a href="about.html" id="link">About</a></li>
@@ -45,44 +48,48 @@
                     <li><a href="events.html" id="link">Events</a></li>
                     <li><a href="team.html" id="link">Team</a></li>
                     <li><a href="contact.html" id="link">Contact</a></li>
-                    <li class="active"><a href="gallery.html" id="link">Gallery</a></li>
+                    <li><a href="gallery.html" id="link">Gallery</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container">
-        <div id="container" class="cols">
-            <div class="animated fadeInDown">
-                <div class="box one">
-                    <img src="assets/img/gallery/box1.jpg" alt="" class="img-responsive">
-                </div>
-                <div class="box two">
-                    <img src="assets/img/gallery/box2.jpg" style="max-width: 100%" height="auto">
-                </div>
-                <div class="box three">
-                    <img src="assets/img/gallery/box3.jpg" style="max-width: 100%" height="auto">
-                </div>
-                <div class="box four">
-                    <img src="assets/img/gallery/box4.jpg" style="max-width: 100%" height="auto">
-                </div>
-                <div class="box five">
-                    <img src="assets/img/gallery/box5.jpg" style="max-width: 100%" height="auto">
-                </div>
-                <div class="box six">
-                    <img src="assets/img/gallery/box6.jpg" style="max-width: 100%" height="auto">
-                </div>
-                <div class="box seven">
-                    <img src="assets/img/gallery/box7.jpg" style="max-width: 100%" height="auto">
-                </div>
-                <div class="box eight">
-                    <img src="assets/img/gallery/box8.jpg" style="max-width: 100%" height="auto">
-                </div>
-                <div class="box nine">
-                    <img src="assets/img/gallery/box8.jpg" style="max-width: 100%" height="auto">
-                </div>
-                <div class="box ten">
-                    <img src="assets/img/gallery/box10.jpg" style="max-width: 100%" height="auto">
-                </div>
+    <div class="container gallery">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="assets/img/gallery/box1.jpg" class="img-responsive">
+            </div>
+            <div class="col-md-4">
+                <img src="assets/img/gallery/box1.jpg" class="img-responsive">
+            </div>
+            <div class="col-md-4">
+                <img src="assets/img/gallery/box1.jpg" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="assets/img/gallery/box1.jpg" class="img-responsive">
+            </div>
+            <div class="col-md-6">
+                <img src="assets/img/gallery/box1.jpg" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="assets/img/gallery/box1.jpg" class="img-responsive">
+            </div>
+            <div class="col-md-6">
+                <img src="assets/img/gallery/box1.jpg" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="assets/img/gallery/box1.jpg" class="img-responsive">
+            </div>
+            <div class="col-md-4">
+                <img src="assets/img/gallery/box1.jpg" class="img-responsive">
+            </div>
+            <div class="col-md-4">
+                <img src="assets/img/gallery/box1.jpg" class="img-responsive">
             </div>
         </div>
     </div>
@@ -92,6 +99,35 @@
                 <a href="#top" title="Top" class="smoothScroll"><i class="fa fa-chevron-up fa-1x fa-bw" style="float: right;color: white;  margin-right:20px;"></i></a></p>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".navbar a, #navbar-fixed-bottom").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 5000, function() {
+                        window.location.hash = hash;
+                    });
+                }
+
+            });
+            $(window).scroll(function() {
+                $(".slideanim").each(function() {
+                    var pos = $(this).offset().top;
+
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
+        });
+
+    </script>
     <script>
         $('.smoothScroll').click(function() {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
