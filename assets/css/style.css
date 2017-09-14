@@ -369,10 +369,10 @@ h5 {
 .inline-block {
     background-color: rgba(40, 55, 71, 1);
     width: 100%;
-    padding-top: 8rem;
+    padding-top: 5rem;
     color: white;
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .copy {
