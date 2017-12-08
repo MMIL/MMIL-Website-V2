@@ -6,7 +6,18 @@
 .gallery img {
     margin-bottom: 2rem;
 }
-
+.grid-padding{
+	padding: 0 8px;
+}
+.grid-padding img{
+	margin-bottom: 15px;
+}
+.padding-right-zero{
+	padding-right: 0px !important;
+}
+#myGrid{
+	margin-top: 50px;
+}
 .loader {
     display: block;
     position: absolute;
